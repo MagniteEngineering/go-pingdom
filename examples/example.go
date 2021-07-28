@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/russellcardullo/go-pingdom/pingdom"
+	"github.com/MagniteEngineering/go-pingdom/pingdom"
 )
 
 type credentials struct {
@@ -61,7 +61,7 @@ func main() {
 	fmt.Println("All checks:", checks)
 
 	// Create a new http check
-	newCheck := pingdom.HttpCheck{Name: "Test Check", Hostname: "example.com", Resolution: 5}
+	newCheck := pingdom.HttpCheck{Name: "Test Check", Hostname: "example.com", Resolution: 5, IPv6: false}
 	check, _ := client.Checks.Create(&newCheck)
 	fmt.Println("Created check:", check) // {ID, Name}
 
@@ -75,7 +75,7 @@ func main() {
 	fmt.Println("Details:", details)
 
 	// Update a check
-	updatedCheck := pingdom.HttpCheck{Name: "Updated Check", Hostname: "example2.com", Resolution: 5}
+	updatedCheck := pingdom.HttpCheck{Name: "Updated Check", Hostname: "example2.com", Resolution: 5, IPv6: true}
 	upMsg, _ := client.Checks.Update(check.ID, &updatedCheck)
 	fmt.Println("Modified check, message:", upMsg)
 
