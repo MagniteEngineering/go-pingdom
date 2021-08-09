@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/russellcardullo/go-pingdom.svg?branch=master)](https://travis-ci.org/russellcardullo/go-pingdom) [![Go Report Card](https://goreportcard.com/badge/github.com/russellcardullo/go-pingdom/pingdom)](https://goreportcard.com/report/github.com/russellcardullo/go-pingdom/pingdom) [![GoDoc](https://godoc.org/github.com/russellcardullo/go-pingdom/pingdom?status.svg)](https://godoc.org/github.com/russellcardullo/go-pingdom/pingdom)
 
+This forked repo contains the following additions:
+* support for enabling IPv6 checks.
+* https://github.com/russellcardullo/terraform-provider-pingdom/issues/88
+
 go-pingdom is a Go client library for the Pingdom API.
 
 This currently supports working with HTTP, ping checks, and TCP checks.

@@ -32,6 +32,7 @@ type HttpCheck struct {
 	TeamIds                  []int             `json:"teamids,omitempty"`
 	VerifyCertificate        *bool             `json:"verify_certificate,omitempty"`
 	SSLDownDaysBefore        *int              `json:"ssl_down_days_before,omitempty"`
+	IPv6                     bool              `json:"ipv6,omitempty"`
 }
 
 // PingCheck represents a Pingdom ping check.
@@ -89,6 +90,7 @@ func (ck *HttpCheck) PutParams() map[string]string {
 		"host":             ck.Hostname,
 		"resolution":       strconv.Itoa(ck.Resolution),
 		"paused":           strconv.FormatBool(ck.Paused),
+		"ipv6":             strconv.FormatBool(ck.IPv6),
 		"notifyagainevery": strconv.Itoa(ck.NotifyAgainEvery),
 		"notifywhenbackup": strconv.FormatBool(ck.NotifyWhenBackup),
 		"url":              ck.Url,
