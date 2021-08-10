@@ -56,7 +56,8 @@ func TestHttpCheckPutParams(t *testing.T) {
 				"responsetime_threshold": "2300",
 				"verify_certificate":     "true",
 				"ssl_down_days_before":   "10",
-				"ipv6":					  "false",
+				"ipv6":                   "false",
+
 			},
 		},
 		{
@@ -96,7 +97,8 @@ func TestHttpCheckPutParams(t *testing.T) {
 				"userids":                "123,456",
 				"teamids":                "789",
 				"responsetime_threshold": "2300",
-				"ipv6":					  "false",
+				"ipv6":                   "false",
+
 			},
 		},
 	}
@@ -149,8 +151,7 @@ func TestHttpCheckPostParams(t *testing.T) {
 		"responsetime_threshold": "2300",
 		"verify_certificate":     "true",
 		"ssl_down_days_before":   "10",
-		"ipv6":					  "false",
-
+		"ipv6":                   "false",
 	}
 
 	params := check.PostParams()
