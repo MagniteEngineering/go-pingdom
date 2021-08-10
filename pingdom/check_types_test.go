@@ -57,6 +57,7 @@ func TestHttpCheckPutParams(t *testing.T) {
 				"verify_certificate":     "true",
 				"ssl_down_days_before":   "10",
 				"ipv6":                   "false",
+
 			},
 		},
 		{
@@ -97,6 +98,7 @@ func TestHttpCheckPutParams(t *testing.T) {
 				"teamids":                "789",
 				"responsetime_threshold": "2300",
 				"ipv6":                   "false",
+
 			},
 		},
 	}
