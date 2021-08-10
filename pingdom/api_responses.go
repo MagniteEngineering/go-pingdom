@@ -204,6 +204,7 @@ type CheckResponseHTTPDetails struct {
 	RequestHeaders    map[string]string `json:"requestheaders,omitempty"`
 	VerifyCertificate bool              `json:"verify_certificate,omitempty"`
 	SSLDownDaysBefore int               `json:"ssl_down_days_before,omitempty"`
+	IPv6              bool              `json:"ipv6,omitempty"`
 }
 
 // CheckResponseTCPDetails represents the details specific to TCP checks.
