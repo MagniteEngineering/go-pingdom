@@ -32,7 +32,8 @@ var detailedCheckJSON = `
 	"lasterrortime" : 1293143467,
 	"lasttesttime" : 1294064823,
 	"tags": [],
-	"responsetime_threshold": 2300
+	"responsetime_threshold": 2300,
+	"ipv6": false
 }
 `
 
